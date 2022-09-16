@@ -1,13 +1,18 @@
 ﻿using NLog;
-using LogTest.Clases;
+using TP2Taller2.Clases;
 
-namespace LogTest
+namespace TP2Taller2
 {
-    class Program{
-        static void Main(string[] args){
+    class Program
+    {
+        static void Main(string[] args)
+        {
             var Logger = LogManager.GetCurrentClassLogger();
             int cantidad;
             List<Alumno> alumnos = new List<Alumno>();
+
+            Console.WriteLine("Ingresar cantidad de alumnos:");
+            cantidad = Control.IngresarNumPositivo();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace LogTest.Clases
+﻿namespace TP2Taller2.Clases
 {
     class HelperDeArchivos
     {
