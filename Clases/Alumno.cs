@@ -8,9 +8,18 @@
         private int Dni { get; set; }
         public int Curso { get; set; }
 
+        public Alumno(int id, string nombre, string apellido, int dni, int curso)
+        {
+            Id = id;
+            Nombre = nombre;
+            Apellido = apellido;
+            Dni = dni;
+            Curso = curso;
+        }
+
         public string ToCSV()
         {
-            return $"{Id};{Nombre};{Apellido};{Dni}";
+            return $"{Id};{Nombre};{Apellido};{Dni}\n";
         }
 
         public override string ToString()

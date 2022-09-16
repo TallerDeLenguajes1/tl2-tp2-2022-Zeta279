@@ -15,7 +15,7 @@
                 }
             }
 
-            File.AppendAllText(deportes[alumno.Curso] + ".csv" , alumno.ToCSV() + "\n");
+            File.AppendAllText(deportes[alumno.Curso] + ".csv" , alumno.ToCSV());
         }
 
         static public void LimpiarCSV(string path)
